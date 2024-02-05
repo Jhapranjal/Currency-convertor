@@ -27,6 +27,7 @@ function InputBox({
                     disabled={amountDisable}
                     value={amount}
                     onChange={(e) => onAmountChange && onAmountChange(Number(e.target.value))}
+                    //This is a defensive programming technique to prevent errors if onAmountChange is not provided.
                 />
             </div>
             <div className="w-1/2 flex flex-wrap justify-end text-right">
